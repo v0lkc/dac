@@ -1,0 +1,96 @@
+[
+  {
+    "timestamp": "2024-01-15T13:13:22Z",
+    "event_type": "user_login@v2",
+    "triggered_by_userid": 1000,
+    "details": {
+      "ip_address": "192.168.0.1",
+      "user_agent": "Mozilla/5.0"
+    }
+  },
+  {
+    "timestamp": 1705324502000,
+    "event_type": "user_created@v1",
+    "triggered_by_userid": 1000,
+    "details": {
+      "userid": 1002,
+      "lastname": "Johnson",
+      "firstname": "Sarah",
+      "email": "sarah.johnson@company.com"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T14:18:17+01:00",
+    "event_type": "permission_granted@v2",
+    "triggered_by_userid": 1000,
+    "details": {
+      "userid": 1002,
+      "role": "read_documents"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T14:33:27+01:00",
+    "event_type": "permission_granted@v2",
+    "triggered_by_userid": 1000,
+    "details": {
+      "userid": 1002,
+      "role": "write_documents"
+    }
+  },
+  {
+    "timestamp": 1705325593000,
+    "event_type": "user_created@v1",
+    "triggered_by_userid": 1001,
+    "details": {
+      "userid": 1003,
+      "lastname": "Williams",
+      "firstname": "Mike",
+      "email": "mike.williams@cowpany.com"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T14:35:15+01:00",
+    "event_type": "permission_revoked@v2",
+    "triggered_by_userid": 1000,
+    "details": {
+      "userid": 1001,
+      "role": "admin_users"
+    }
+  },
+  {
+    "timestamp": 1705325609000,
+    "event_type": "permission_granted@v1",
+    "triggered_by_userid": 1001,
+    "details": {
+      "userid": 1003,
+      "role": "admin_users"
+    }
+  },
+  {
+    "timestamp": 1705326900000,
+    "event_type": "permission_revoked@v1",
+    "triggered_by_userid": 1000,
+    "details": {
+      "userid": 1001,
+      "role": "delete_documents"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T14:32:45+01:00",
+    "event_type": "permission_granted@v2",
+    "triggered_by_userid": 1000,
+    "details": {
+      "userid": 1001,
+      "role": "admin_users"
+    }
+  },
+  {
+    "timestamp": 1705325569000,
+    "event_type": "user_login@v1",
+    "triggered_by_userid": 1001,
+    "details": {
+      "ip_address": "6.6.6.6",
+      "user_agent": "Mozilla/4.0 (compatible; MSIE 6.0b; Windows NT 4.0)"
+    }
+  }
+]
