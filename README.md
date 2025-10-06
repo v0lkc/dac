@@ -1,50 +1,29 @@
-# Engineer Analyst Coding Challenge
+# Audit Log Analysis Challenge
 
-## Overview
-**Duration:** 10-15 minutes  
-**Technology:** Your choice (Python, JavaScript, SQL, R, etc.)  
-**Objective:** Analyze temporal data to determine effective user permissions at a specific point in time
+Welcome to the Audit Log Analysis Challenge! This coding challenge is designed to test your ability to work with data parsing, data transformations, and logical reasoning.
 
 ## Background
-You are working with a system that tracks user permissions over time. The current database only shows the present state of permissions, but you need to understand what permissions a user had at any given historical moment by analyzing audit logs.
 
-## Data Files Provided
+You have been given a **snapshot of audit logs** (`audit_log.json`) and a **snapshot of the database** (`db.sql`) of a user management system. Assume these snapshots were taken simultaneously. The events that you can find in the auditlog are **not** in chronological order. And since there is a retention period for security events configured, old events might be missing. On the top of everything the system has evolved over time, and as a result, the audit log contains events in two different formats:
 
-### 1. users.sql
-Database export containing user information with userid, name, firstname, email, lastmodified, created_at
-
-### 2. role_assignments.csv
-Current role assignments showing userid, role_id, role_name, assigned_at
-
-### 3. audit_log.json
-Historical audit log with various events including user creation/deletion, permission grants/revocations, role assignments/removals
-
-**Important Notes about audit_log.json:**
-- **Entries are NOT sorted chronologically** - you must sort them yourself
-- **Mixed timestamp formats:**
-  - Some entries use RFC-compliant date format (e.g., "2024-01-15T14:25:30Z")
-  - Others use system time in milliseconds (e.g., 1705327530000)
-- You'll need to normalize timestamps before processing
+- **v1 events**: Use millisecond timestamps (Unix epoch time in milliseconds, UTC)
+- **v2 events**: Use RFC format timestamps (ISO 8601 format with timezone information)
 
 ## Your Task
 
-**Primary Question:** What permissions did User ID 1001 have on 2024-01-15 at 14:30:00?
+Please make yourself familiar with the provided files. Analyze the data and answer as many questions as possible, in any order you prefer.
 
-### Requirements
-1. Parse the provided data files
-2. Handle mixed timestamp formats and convert to a common format
-3. Sort audit log events chronologically before processing
-4. Reconstruct the historical state by processing events in correct time order
-5. Determine the effective permissions for the specified user at the given timestamp
+### Question 1: What's the relation between users and user_permissions? [super easy]
+### Question 2: Is the database normalized? [super easy]
+### Question 3: Looking at the provided audit logs only. What challenges might arise when processing the data? [easy]
+### Question 4: How many **semantically distinct** event types can be found in the audit log. [easy]
+### Question 5: When was Sarah Johnson's account created? [easy]
+### Question 6: Who created the account of Sarah Johnson? [medium]
+### Question 7: What were John Smith's effective permissions when he logged in on 2024-01-15 at 13:32:49Z? [hard]
+### Question 8: User 1003 has the "admin_users" role assigned. Is he trustworthy enough for this role? [hard]
 
-### Deliverables
-- Your code/script (any language/tool)
-- The answer: List of permissions User 1001 had at the specified time
-- Brief explanation of your approach
+---
 
-## Evaluation Criteria
-- Correctness: Accurate temporal reconstruction with proper timestamp handling
-- Code Quality: Clean, readable, well-structured code
-- Problem-Solving: Logical approach to handling time-based data and format inconsistencies
+**Note**: You may use any programming language, tools, or libraries you're comfortable with (except AI assistants). However, the challenge can also be solved manually, e.g. for converting timestamps you could use https://it-tools.tech/date-converter. The goal is to demonstrate your problem-solving skills and attention to detail. If you get stuck, describe your problem and ask for hints.
 
 Good luck!
