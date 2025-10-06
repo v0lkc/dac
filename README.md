@@ -13,14 +13,14 @@ You have been given a **snapshot of audit logs** (`audit_log.json`) and a **snap
 
 Please make yourself familiar with the provided files. Analyze the data and answer as many questions as possible, in any order you prefer.
 
-### Question 1: What's the relation between users and user_permissions? [super easy]
-### Question 2: Is the database normalized? [super easy]
-### Question 3: Looking at the provided audit logs only. What challenges might arise when processing the data? [easy]
-### Question 4: How many **semantically distinct** event types can be found in the audit log. [easy]
-### Question 5: When was Sarah Johnson's account created? [easy]
-### Question 6: Who created the account of Sarah Johnson? [medium]
-### Question 7: What were John Smith's effective permissions when he logged in on 2024-01-15 at 13:32:49Z? [hard]
-### Question 8: User 1003 has the "admin_users" role assigned. Is he trustworthy enough for this role? [hard]
+* **Question 1**: What's the relation between users and user_permissions? [super easy]
+* **Question 2**: Is the database normalized? [super easy]
+* **Question 3**: Looking at the provided audit logs only. What challenges might arise when processing the data? [easy]
+* **Question 4**: How many **semantically distinct** event types can be found in the audit log. [easy]
+* **Question 5**: When was Sarah Johnson's account created? [easy]
+* **Question 6**: Who created the account of Sarah Johnson? [medium]
+* **Question 7**: What were John Smith's effective permissions when he logged in on 2024-01-15 at 13:32:49Z? [hard]
+* **Question 8**: User 1003 has the "admin_users" role assigned. Is he trustworthy enough for this role? [hard]
 
 ---
 
