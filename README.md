@@ -4,7 +4,7 @@ Welcome to the Audit Log Analysis Challenge! This coding challenge is designed t
 
 ## Background
 
-You have been given a **snapshot of audit logs** (`audit_log.json`) and a **snapshot of the database** (`db.sql`) of a user management system. Assume these snapshots were taken simultaneously. The events that you can find in the auditlog are **not** in chronological order. And since there is a retention period for security events configured, old events might be missing. On the top of everything the system has evolved over time, and as a result, the audit log contains events in two different formats:
+You have been given a [snapshot of audit logs](audit_log.json) and a [snapshot of the database](db.sql) of a user management system. Assume these snapshots were taken simultaneously. The events that you can find in the auditlog are **not** in chronological order. And since there is a retention period for security events configured, old events might be missing. On the top of everything the system has evolved over time, and as a result, the audit log contains events in two different formats:
 
 - **v1 events**: Use millisecond timestamps (Unix epoch time in milliseconds, UTC)
 - **v2 events**: Use RFC format timestamps (ISO 8601 format with timezone information)
