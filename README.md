@@ -20,7 +20,7 @@ Please make yourself familiar with the provided files. Analyze the data and answ
 * **Question 5**: When was Sarah Johnson's account created? [easy]
 * **Question 6**: Who created the account of Sarah Johnson? [medium]
 * **Question 7**: What were John Smith's _effective permissions_ when he logged in on 2024-01-15 at 13:32:49Z? [hard]
-* **Question 8**: User `1003` has the "admin_users" role assigned. Is he trustworthy enough for this role? [hard]
+* **Question 8**: User `1003` has the `admin_users` role assigned. Is he trustworthy enough for this role? [hard]
 
 ---
 
